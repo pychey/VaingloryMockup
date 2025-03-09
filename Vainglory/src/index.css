@@ -1,17 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial;
+  font-family: Antonio;
 }
 
 body {
   background-color: #111;
   color: white;
+  text-transform: uppercase;
 }
 
 .hero-banner {
-  background: url('https://www.vainglorygame.com/wp-content/themes/vainglory/images/bg-heroes-header.jpg') no-repeat center center/cover;
+  background: url('./assets/bg-heroes-header.jpg') no-repeat center center/cover;
   height: 300px;
   display: flex;
   justify-content: center;
@@ -23,9 +26,10 @@ body {
 .role ul {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 30px;
   padding: 15px;
   background-color: #222;
+  font-size: large;
 }
 
 .role ul li {
@@ -40,9 +44,9 @@ body {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-  gap: 20px;
-  padding: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+  padding: 10px;
   max-width: 100%;
   margin: auto;
 }
@@ -50,23 +54,25 @@ body {
 .hero {
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .hero img {
   width: 100%;
-  height: 340px;
+  height: 300px;
   object-fit: cover;
 }
 
 .hero-info {
   position: absolute;
-  bottom: 10px;
-  left: 10px;
+  bottom: 20px;
+  left: 20px;
   color: white;
-  font-weight: bold;
+  font-size: 28px;
+  letter-spacing: 1px;
 }
 
 .hero-role {
   color: #ffcc00;
-  font-size: 14px;
+  font-size: 18px;
 }

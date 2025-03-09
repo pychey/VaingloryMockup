@@ -1,7 +1,26 @@
+import Hero from "./components/Hero";
+import { HERO_DATA } from "./data";
+
 function App() {
   return (
     <div>
-      <h1>Hello World!</h1>
+      <header class="hero-banner">
+          <h1>Meet The Heroes</h1>
+      </header>
+      <section class="role">
+          <ul>
+              <li class="selected">All</li>
+              <li>Assassin</li>
+              <li>Mage</li>
+              <li>Protector</li>
+              <li>Sniper</li>
+              <li>Warrior</li>
+              <li>Free Hero Rotation</li>
+          </ul>
+      </section>
+      <main class="hero-grid">
+          { HERO_DATA.map((hero)=><Hero hero={hero}/>) }
+      </main>
     </div>
   );
 }
