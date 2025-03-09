@@ -1,11 +1,13 @@
 import Hero from "./components/Hero";
 import { HERO_DATA } from "./data";
+import VainGlory from "./assets/logo.png";
 
 function App() {
   return (
     <div>
       <header class="hero-banner">
           <h1>Meet The Heroes</h1>
+          <img src={VainGlory} alt="VainGlory"/>
       </header>
       <section class="role">
           <ul>
